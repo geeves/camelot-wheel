@@ -5,7 +5,9 @@ import "./components/camelot.css";
 
 const App = () => (
   <div id="camelot-container">
-    <CamelotWheel/>
+    <CamelotWheel
+      spacing="16"
+      classes={{control: "control"}}/>
   </div>
 );
 

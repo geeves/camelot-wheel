@@ -1,187 +1,199 @@
 div#camelot-container {
-    margin: 20px auto;
-    width: 750px;
+  margin: 20px auto;
+  width: 750px;
 }
 
 .cls-1 {
-    fill: #2ae1c4;
-    cursor: pointer;
+  fill: #2ae1c4;
+  cursor: pointer;
 }
 
 .cls-1:hover {
-    fill: #ddd9c5;
-    cursor: pointer;
+  fill: #ddd9c5;
+  cursor: pointer;
 }
 
 .cls-2 {
-    fill: #70d979;
-    cursor: pointer;
+  fill: #70d979;
+  cursor: pointer;
 }
 
 .cls-3 {
-    fill: #b0d045;
-    cursor: pointer;
+  fill: #b0d045;
+  cursor: pointer;
 }
 
 .cls-4 {
-    fill: #e4ca46;
-    cursor: pointer;
+  fill: #e4ca46;
+  cursor: pointer;
 }
 
 .cls-5 {
-    fill: #ffaa40;
-    cursor: pointer;
+  fill: #ffaa40;
+  cursor: pointer;
 }
 
 .cls-6 {
-    fill: #ff7638;
-    cursor: pointer;
+  fill: #ff7638;
+  cursor: pointer;
 }
 
 .cls-7 {
-    fill: #ff5f67;
-    cursor: pointer;
+  fill: #ff5f67;
+  cursor: pointer;
 }
 
 .cls-8 {
-    fill: #ff7ae7;
-    cursor: pointer;
+  fill: #ff7ae7;
+  cursor: pointer;
 }
 
 .cls-9 {
-    fill: #b984ff;
-    cursor: pointer;
+  fill: #b984ff;
+  cursor: pointer;
 }
 
 .cls-10 {
-    fill: #478bff;
-    cursor: pointer;
+  fill: #478bff;
+  cursor: pointer;
 }
 
 .cls-11 {
-    fill: #13b0ff;
-    cursor: pointer;
+  fill: #13b0ff;
+  cursor: pointer;
 }
 
 .cls-12 {
-    fill: #00d9ff;
-    cursor: pointer;
+  fill: #00d9ff;
+  cursor: pointer;
 }
 
 .cls-13 {
-    fill: #a1f4f6;
-    cursor: pointer;
+  fill: #a1f4f6;
+  cursor: pointer;
 }
 
 .cls-14 {
-    fill: #c9efc7;
-    cursor: pointer;
+  fill: #c9efc7;
+  cursor: pointer;
 }
 
 .cls-15 {
-    fill: #f2ebb9;
-    cursor: pointer;
+  fill: #f2ebb9;
+  cursor: pointer;
 }
 
 .cls-16 {
-    fill: #ffe3b8;
-    cursor: pointer;
+  fill: #ffe3b8;
+  cursor: pointer;
 }
 
 .cls-17 {
-    fill: #ffcdb2;
-    cursor: pointer;
+  fill: #ffcdb2;
+  cursor: pointer;
 }
 
 .cls-18 {
-    fill: #ffbdb8;
-    cursor: pointer;
+  fill: #ffbdb8;
+  cursor: pointer;
 }
 
 .cls-19 {
-    fill: #ffc6e0;
-    cursor: pointer;
+  fill: #ffc6e0;
+  cursor: pointer;
 }
 
 .cls-20 {
-    fill: #f0ceff;
-    cursor: pointer;
+  fill: #f0ceff;
+  cursor: pointer;
 }
 
 .cls-21 {
-    fill: #c4d0ff;
-    cursor: pointer;
+  fill: #c4d0ff;
+  cursor: pointer;
 
 }
 
 .cls-22 {
-    fill: #adf;
-    cursor: pointer;
+  fill: #adf;
+  cursor: pointer;
 }
 
 .cls-23 {
-    fill: #9dedff;
-    cursor: pointer;
+  fill: #9dedff;
+  cursor: pointer;
 }
 
 .cls-24 {
-    font-size: 84px;
+  font-size: 84px;
 }
 
 .cls-24, .cls-27 {
-    font-family: EuphemiaUCAS, Euphemia UCAS;
+  font-family: EuphemiaUCAS, Euphemia UCAS;
 }
 
 .cls-25, .cls-26 {
-    font-family: STIXGeneral-Regular, STIXGeneral;
+  font-family: STIXGeneral-Regular, STIXGeneral;
 }
 
 .cls-26 {
-    letter-spacing: 0em;
+  letter-spacing: 0em;
 }
 
 .cls-27 {
-    font-size: 80.159px;
+  font-size: 80.159px;
 }
 
 .cls-28, .cls-29, .cls-30 {
-    font-size: 48px;
-    font-family: EuphemiaUCAS-Bold, Euphemia UCAS;
-    font-weight: 700;
+  font-size: 48px;
+  font-family: EuphemiaUCAS-Bold, Euphemia UCAS;
+  font-weight: 700;
 }
 
 .cls-28 {
-    letter-spacing: 0.025em;
+  letter-spacing: 0.025em;
 }
 
 .cls-29 {
-    letter-spacing: 0.05em;
+  letter-spacing: 0.05em;
 }
 
 .cls-30 {
-    letter-spacing: 0.05em;
+  letter-spacing: 0.05em;
 }
 
 .cls-31, .cls-33 {
-    fill: none;
-    stroke: #000;
-    stroke-miterlimit: 10;
+  fill: none;
+  stroke: #000;
+  stroke-miterlimit: 10;
 }
 
 .cls-32 {
-    fill: #231f20;
+  fill: #231f20;
 }
 
 .cls-33 {
-    stroke-width: 8px;
+  stroke-width: 8px;
+}
+
+#stripe line {
+  fill: white;
+  stroke: white;
+  stroke-linecap: square;
+  stroke-linejoin: miter;
+  stroke-width: 10px;
+}
+
+g.highlight {
+  mask: url(#mask);
+  stroke-linecap: square;
+  stroke-linejoin: miter;
+}
+
+.rectMask {
+  fill: url(#stripe);
 }
 
 path.highlight {
-    fill: #b5b19d !important;
-    /*background-color: #6d695c;*/
-    background-image: repeating-linear-gradient(120deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .1) 1px, transparent 1px, transparent 60px),
-    repeating-linear-gradient(60deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .1) 1px, transparent 1px, transparent 60px),
-    linear-gradient(60deg, rgba(0, 0, 0, .1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, .1) 75%, rgba(0, 0, 0, .1)),
-    linear-gradient(120deg, rgba(0, 0, 0, .1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, .1) 75%, rgba(0, 0, 0, .1));
-    background-size: 70px 120px;
+  fill: #baf1a3 !important;
 }

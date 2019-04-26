@@ -1,6 +1,6 @@
 export default {
   ALL: "all",
-  COMPATIBLE: "compatible",
+  MAIN: "main",
   NEXT: "next",
   PREVIOUS: "prev",
   DIAGONAL: "diagonal",
