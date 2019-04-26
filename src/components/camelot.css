@@ -1,0 +1,152 @@
+div#camelot-container {
+    margin: 20px auto;
+    width: 750px;
+}
+
+.cls-1 {
+    fill: #2ae1c4;
+}
+
+.cls-1:hover {
+    fill: #e13fda;
+}
+
+.cls-2 {
+    fill: #70d979;
+}
+
+.cls-3 {
+    fill: #b0d045;
+}
+
+.cls-4 {
+    fill: #e4ca46;
+}
+
+.cls-5 {
+    fill: #ffaa40;
+}
+
+.cls-6 {
+    fill: #ff7638;
+}
+
+.cls-7 {
+    fill: #ff5f67;
+}
+
+.cls-8 {
+    fill: #ff7ae7;
+}
+
+.cls-9 {
+    fill: #b984ff;
+}
+
+.cls-10 {
+    fill: #478bff;
+}
+
+.cls-11 {
+    fill: #13b0ff;
+}
+
+.cls-12 {
+    fill: #00d9ff;
+}
+
+.cls-13 {
+    fill: #a1f4f6;
+}
+
+.cls-14 {
+    fill: #c9efc7;
+}
+
+.cls-15 {
+    fill: #f2ebb9;
+}
+
+.cls-16 {
+    fill: #ffe3b8;
+}
+
+.cls-17 {
+    fill: #ffcdb2;
+}
+
+.cls-18 {
+    fill: #ffbdb8;
+}
+
+.cls-19 {
+    fill: #ffc6e0;
+}
+
+.cls-20 {
+    fill: #f0ceff;
+}
+
+.cls-21 {
+    fill: #c4d0ff;
+}
+
+.cls-22 {
+    fill: #adf;
+}
+
+.cls-23 {
+    fill: #9dedff;
+}
+
+.cls-24 {
+    font-size: 84px;
+}
+
+.cls-24, .cls-27 {
+    font-family: EuphemiaUCAS, Euphemia UCAS;
+}
+
+.cls-25, .cls-26 {
+    font-family: STIXGeneral-Regular, STIXGeneral;
+}
+
+.cls-26 {
+    letter-spacing: 0em;
+}
+
+.cls-27 {
+    font-size: 80.159px;
+}
+
+.cls-28, .cls-29, .cls-30 {
+    font-size: 48px;
+    font-family: EuphemiaUCAS-Bold, Euphemia UCAS;
+    font-weight: 700;
+}
+
+.cls-28 {
+    letter-spacing: 0.025em;
+}
+
+.cls-29 {
+    letter-spacing: 0.05em;
+}
+
+.cls-30 {
+    letter-spacing: 0.05em;
+}
+
+.cls-31, .cls-33 {
+    fill: none;
+    stroke: #000;
+    stroke-miterlimit: 10;
+}
+
+.cls-32 {
+    fill: #231f20;
+}
+
+.cls-33 {
+    stroke-width: 8px;
+}
