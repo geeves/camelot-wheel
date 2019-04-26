@@ -1,6 +1,9 @@
 .idea
 *.iml
 
+### Generated Files
+# dist/
+
 ### Node template
 # Logs
 logs

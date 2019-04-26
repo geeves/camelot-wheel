@@ -6,4 +6,4 @@ export default {
   DIAGONAL: "diagonal",
   SEMITONE: "semitone",
   DOUBLE_SEMITONE: "doubleSemitone"
-}
+};

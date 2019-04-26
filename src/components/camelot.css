@@ -5,98 +5,123 @@ div#camelot-container {
 
 .cls-1 {
     fill: #2ae1c4;
+    cursor: pointer;
 }
 
 .cls-1:hover {
-    fill: #e13fda;
+    fill: #ddd9c5;
+    cursor: pointer;
 }
 
 .cls-2 {
     fill: #70d979;
+    cursor: pointer;
 }
 
 .cls-3 {
     fill: #b0d045;
+    cursor: pointer;
 }
 
 .cls-4 {
     fill: #e4ca46;
+    cursor: pointer;
 }
 
 .cls-5 {
     fill: #ffaa40;
+    cursor: pointer;
 }
 
 .cls-6 {
     fill: #ff7638;
+    cursor: pointer;
 }
 
 .cls-7 {
     fill: #ff5f67;
+    cursor: pointer;
 }
 
 .cls-8 {
     fill: #ff7ae7;
+    cursor: pointer;
 }
 
 .cls-9 {
     fill: #b984ff;
+    cursor: pointer;
 }
 
 .cls-10 {
     fill: #478bff;
+    cursor: pointer;
 }
 
 .cls-11 {
     fill: #13b0ff;
+    cursor: pointer;
 }
 
 .cls-12 {
     fill: #00d9ff;
+    cursor: pointer;
 }
 
 .cls-13 {
     fill: #a1f4f6;
+    cursor: pointer;
 }
 
 .cls-14 {
     fill: #c9efc7;
+    cursor: pointer;
 }
 
 .cls-15 {
     fill: #f2ebb9;
+    cursor: pointer;
 }
 
 .cls-16 {
     fill: #ffe3b8;
+    cursor: pointer;
 }
 
 .cls-17 {
     fill: #ffcdb2;
+    cursor: pointer;
 }
 
 .cls-18 {
     fill: #ffbdb8;
+    cursor: pointer;
 }
 
 .cls-19 {
     fill: #ffc6e0;
+    cursor: pointer;
 }
 
 .cls-20 {
     fill: #f0ceff;
+    cursor: pointer;
 }
 
 .cls-21 {
     fill: #c4d0ff;
+    cursor: pointer;
+
 }
 
 .cls-22 {
     fill: #adf;
+    cursor: pointer;
 }
 
 .cls-23 {
     fill: #9dedff;
+    cursor: pointer;
 }
 
 .cls-24 {
@@ -149,4 +174,14 @@ div#camelot-container {
 
 .cls-33 {
     stroke-width: 8px;
+}
+
+path.highlight {
+    fill: #b5b19d !important;
+    /*background-color: #6d695c;*/
+    background-image: repeating-linear-gradient(120deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .1) 1px, transparent 1px, transparent 60px),
+    repeating-linear-gradient(60deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .1) 1px, transparent 1px, transparent 60px),
+    linear-gradient(60deg, rgba(0, 0, 0, .1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, .1) 75%, rgba(0, 0, 0, .1)),
+    linear-gradient(120deg, rgba(0, 0, 0, .1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, .1) 75%, rgba(0, 0, 0, .1));
+    background-size: 70px 120px;
 }

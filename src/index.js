@@ -1,11 +1,11 @@
 import React from "react";
 import {render} from "react-dom";
-import Camelot from "./components/CamelotWheel";
+import CamelotWheel from "./components/CamelotWheel";
 import "./components/camelot.css";
 
 const App = () => (
   <div id="camelot-container">
-    <Camelot/>
+    <CamelotWheel/>
   </div>
 );
 

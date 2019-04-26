@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "./node_modules/.bin/eslint ./src",
     "dev": "./node_modules/.bin/webpack --mode development",
     "dev:watch": "./node_modules/.bin/webpack --watch --mode development",
     "prod": "./node_modules/.bin/webpack --mode production"
@@ -20,6 +21,8 @@
   "author": "geeves",
   "license": "MIT",
   "dependencies": {
+    "@material-ui/core": "^3.9.3",
+    "@material-ui/icons": "^3.0.2",
     "classnames": "^2.2.6",
     "core-js": "3",
     "react": "16.8.6",
@@ -50,7 +53,7 @@
     "@svgr/core": "^4.2.0",
     "@svgr/webpack": "^4.2.0",
     "babel-core": "7.0.0-bridge.0",
-    "babel-eslint": "10.0.1",
+    "babel-eslint": "^10.0.1",
     "babel-jest": "24.7.1",
     "babel-loader": "8.0.5",
     "babel-plugin-inline-react-svg": "^1.1.0",
@@ -60,6 +63,7 @@
     "enzyme": "3.9.0",
     "enzyme-adapter-react-16": "1.12.1",
     "eslint": "5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
     "eslint-config-prettier": "3.1.0",
     "eslint-plugin-import": "2.9.0",
     "eslint-plugin-prettier": "2.6.2",
@@ -125,9 +129,7 @@
       "@babel/preset-react",
       [
         "@babel/preset-env",
-        {
-
-        }
+        {}
       ]
     ],
     "ignore": [
