@@ -14,6 +14,7 @@ import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import KeyState from "./camelot-states";
 import KeyMap from "./camelot-data";
+import CamelotDescription from "./CamelotDescription";
 
 const styles = (theme) => ({
   root : {
@@ -114,8 +115,13 @@ class CamelotWheel extends React.Component {
     const {mode} = this.state;
 
     return (
-      <Grid container justify="center" spacing={16} mode={mode} xs={12}>
-        <Grid>
+      <Grid
+        justify="center"
+        spacing={16}
+        mode={mode}
+        xs={12}
+        container>
+        <Grid xs={7} item>
           <Grid container justify="center" spacing={Number(spacing)}>
             <Grid xs={12} item>
               <Paper className={classes.control}>
@@ -123,32 +129,19 @@ class CamelotWheel extends React.Component {
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 1838 1838">
                   <defs>
-                    <pattern
-                      id="stripe"
-                      patternUnits="userSpaceOnUse"
-                      width="40"
-                      height="20">
-                      <line
-                        x1="10"
-                        y1="0"
-                        x2="30"
-                        y2="20"/>
-                      <line
-                        x1="-10"
-                        y1="0"
-                        x2="10"
-                        y2="20"/>
-                      <line
-                        x1="30"
-                        y1="0"
-                        x2="50"
-                        y2="20"/>
+                    <pattern id="argyle" patternUnits="userSpaceOnUse" width="20" height="20"
+                             patternTransform="scale(2,4) rotate(45)">
+                      <rect width="20" height="20" fill="#95E3FF"/>
+                      <rect width="10" height="10" fill="#1C3279"/>
+                      <rect width="10" height="10" x="10" y="10" fill="#45C0F5"/>
+                      <path stroke="ghostwhite" stroke-width="0.35" fill="none"
+                            d="M0,5 L20,5 M5,0 L5,20M0,15 L20,15 M15,0 L15,20"/>
                     </pattern>
                     <mask id="mask">
                       <rect
                         height="2500"
                         width="2500"
-                        className="rectMask"/>
+                        fill="url(#argyle)"/>
                     </mask>
                   </defs>
                   <g
@@ -1067,7 +1060,6 @@ class CamelotWheel extends React.Component {
               </Paper>
             </Grid>
           </Grid>
-
           <Grid>
             <Paper className={classes.control}>
               <Grid container spacing={8} justify="center">
@@ -1089,6 +1081,14 @@ class CamelotWheel extends React.Component {
               </Grid>
             </Paper>
           </Grid>
+        </Grid>
+        <Grid
+          xs={5}
+          spacing={16}
+          item>
+          {/*<Paper className={classes.control}>*/}
+            <CamelotDescription/>
+          {/*</Paper>*/}
         </Grid>
       </Grid>
     );

@@ -29,7 +29,8 @@
     "react-dom": "16.8.6",
     "react-inlinesvg": "0.8.4",
     "react-scripts": "3.0.0",
-    "react-svg-map": "^2.0.0"
+    "react-svg-map": "^2.0.0",
+    "react-swipeable-views": "^0.13.1"
   },
   "devDependencies": {
     "@babel/cli": "7.4.3",

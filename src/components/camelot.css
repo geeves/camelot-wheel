@@ -3,6 +3,10 @@ div#camelot-container {
   width: 750px;
 }
 
+article {
+  font-family: Roboto, EuphemiaUCAS, Euphemia UCAS;
+}
+
 .cls-1 {
   fill: #2ae1c4;
   cursor: pointer;
@@ -195,5 +199,5 @@ g.highlight {
 }
 
 path.highlight {
-  fill: #baf1a3 !important;
+  fill: #7e9ff1 !important;
 }
