@@ -36,7 +36,7 @@ export default {
     minor : "1A",
     prev : "12A",
     next : "2A",
-    diagonal : ["12B"],
+    diagonal : ["12B", "2B"],
     semitone : [
       "11A",
       "3A"
@@ -69,7 +69,7 @@ export default {
     minor : "1A",
     prev : "12B",
     next : "2B",
-    diagonal : ["2A"],
+    diagonal : ["2A", "12A"],
     semitone : [
       "11B",
       "3B"
@@ -102,7 +102,7 @@ export default {
     minor : "2A",
     prev : "1A",
     next : "3A",
-    diagonal : ["1B"],
+    diagonal : ["1B", "3B"],
     semitone : [
       "12A",
       "4A"
@@ -135,7 +135,7 @@ export default {
     minor : "2A",
     prev : "1B",
     next : "3B",
-    diagonal : ["3A"],
+    diagonal : ["3A", "1A"],
     semitone : [
       "12B",
       "4B"
@@ -168,7 +168,7 @@ export default {
     minor : "3A",
     prev : "2A",
     next : "4A",
-    diagonal : ["2B"],
+    diagonal : ["2B", "4B"],
     semitone : [
       "1A",
       "5A"
@@ -201,7 +201,7 @@ export default {
     minor : "3A",
     prev : "2B",
     next : "4B",
-    diagonal : ["4A"],
+    diagonal : ["4A", "2A"],
     semitone : [
       "1B",
       "5B"
@@ -234,7 +234,7 @@ export default {
     minor : "4A",
     prev : "3A",
     next : "5A",
-    diagonal : ["3B"],
+    diagonal : ["3B", "5B"],
     semitone : [
       "2A",
       "6A"
@@ -267,7 +267,7 @@ export default {
     minor : "4A",
     prev : "3B",
     next : "5B",
-    diagonal : ["5A"],
+    diagonal : ["5A", "3A"],
     semitone : [
       "2B",
       "6B"
@@ -300,7 +300,7 @@ export default {
     minor : "5A",
     prev : "4A",
     next : "6A",
-    diagonal : ["4B"],
+    diagonal : ["4B", "6B"],
     semitone : [
       "3A",
       "7A"
@@ -333,7 +333,7 @@ export default {
     minor : "5A",
     prev : "4B",
     next : "6B",
-    diagonal : ["6A"],
+    diagonal : ["6A", "4A"],
     semitone : [
       "3B",
       "7B"
@@ -366,7 +366,7 @@ export default {
     minor : "6A",
     prev : "5A",
     next : "7A",
-    diagonal : ["5B"],
+    diagonal : ["5B", "7B"],
     semitone : [
       "4A",
       "8A"
@@ -399,7 +399,7 @@ export default {
     minor : "6A",
     prev : "5B",
     next : "7B",
-    diagonal : ["7A"],
+    diagonal : ["7A", "5A"],
     semitone : [
       "4B",
       "8B"
@@ -432,7 +432,7 @@ export default {
     minor : "7A",
     prev : "6A",
     next : "8A",
-    diagonal : ["6B"],
+    diagonal : ["6B", "8B"],
     semitone : [
       "5A",
       "9A"
@@ -465,7 +465,7 @@ export default {
     minor : "7A",
     prev : "6B",
     next : "8B",
-    diagonal : ["8A"],
+    diagonal : ["8A", "6A"],
     semitone : [
       "5B",
       "9B"
@@ -498,7 +498,7 @@ export default {
     minor : "8A",
     prev : "7A",
     next : "9A",
-    diagonal : ["7B"],
+    diagonal : ["7B", "9B"],
     semitone : [
       "6A",
       "10A"
@@ -531,7 +531,7 @@ export default {
     minor : "8A",
     prev : "7B",
     next : "9B",
-    diagonal : ["9A"],
+    diagonal : ["9A", "7A"],
     semitone : [
       "6B",
       "10B"
@@ -564,7 +564,7 @@ export default {
     minor : "9A",
     prev : "8A",
     next : "10A",
-    diagonal : ["8B"],
+    diagonal : ["8B", "10B"],
     semitone : [
       "7A",
       "11A"
@@ -597,7 +597,7 @@ export default {
     minor : "9A",
     prev : "8B",
     next : "10B",
-    diagonal : ["10A"],
+    diagonal : ["10A", "8A"],
     semitone : [
       "7B",
       "11B"
@@ -630,7 +630,7 @@ export default {
     minor : "10A",
     prev : "9A",
     next : "11A",
-    diagonal : ["9B"],
+    diagonal : ["9B", "11B"],
     semitone : [
       "8A",
       "12A"
@@ -663,7 +663,7 @@ export default {
     minor : "10A",
     prev : "9B",
     next : "11B",
-    diagonal : ["11A"],
+    diagonal : ["11A", "9A"],
     semitone : [
       "8B",
       "12B"
@@ -696,7 +696,7 @@ export default {
     minor : "11A",
     prev : "10A",
     next : "12A",
-    diagonal : ["10B"],
+    diagonal : ["10B", "12B"],
     semitone : [
       "9A",
       "1A"
@@ -729,7 +729,7 @@ export default {
     minor : "11A",
     prev : "10B",
     next : "12B",
-    diagonal : ["12A"],
+    diagonal : ["12A", "10A"],
     semitone : [
       "9B",
       "1B"
@@ -762,7 +762,7 @@ export default {
     minor : "12A",
     prev : "11A",
     next : "1A",
-    diagonal : ["11B"],
+    diagonal : ["11B", "1B"],
     semitone : [
       "10A",
       "2A"
@@ -795,7 +795,7 @@ export default {
     minor : "12A",
     prev : "11B",
     next : "1B",
-    diagonal : ["1A"],
+    diagonal : ["1A", "11A"],
     semitone : [
       "10B",
       "2B"

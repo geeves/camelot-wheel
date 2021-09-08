@@ -34,17 +34,17 @@ const config = {
 
 module.exports = (env, argv) => {
   if ("production" === argv.mode) {
-    config.optimization = {
-      minimizer : [
-        new UglifyJSPlugin({
-          uglifyOptions : {
-            compress : {
-              drop_console : true
-            }
-          }
-        })
-      ]
-    };
+    // config.optimization = {
+    //   minimizer : [
+    //     new UglifyJSPlugin({
+    //       uglifyOptions : {
+    //         compress : {
+    //           drop_console : true
+    //         }
+    //       }
+    //     })
+    //   ]
+    // };
   } else {
     config.devtool = "eval-source-map";
     config.output.filename = "[name]-development.js";

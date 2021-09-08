@@ -21,27 +21,27 @@ const TabContainer = ({children, dir}) => (
 // };
 
 const styles = theme => ({
-  root: {
-    backgroundColor: theme.palette.background.paper,
-    width: 325,
+  root : {
+    backgroundColor : theme.palette.background.paper,
+    width : 325,
   },
 });
 
 class CamelotDescription extends React.Component {
   state = {
-    value: 0,
+    value : 0
   };
 
   handleChange = (event, value) => {
-    this.setState({ value });
+    this.setState({value});
   };
 
   handleChangeIndex = index => {
-    this.setState({ value: index });
+    this.setState({value : index});
   };
 
   render() {
-    const { classes, theme } = this.props;
+    const {classes, theme} = this.props;
 
     return (
       <div className={classes.root}>
@@ -53,8 +53,8 @@ class CamelotDescription extends React.Component {
             textColor="primary"
             variant="fullWidth"
           >
-            <Tab label="Item One"/>
-            <Tab label="Item Two"/>
+            <Tab label="About"/>
+            {/*<Tab label="Item Two"/>*/}
           </Tabs>
         </AppBar>
         <SwipeableViews
@@ -81,7 +81,7 @@ class CamelotDescription extends React.Component {
               ears.
             </p>
           </TabContainer>
-          <TabContainer dir={theme.direction}>Item Two</TabContainer>
+          {/*<TabContainer dir={theme.direction}>Item Two</TabContainer>*/}
         </SwipeableViews>
       </div>
     );

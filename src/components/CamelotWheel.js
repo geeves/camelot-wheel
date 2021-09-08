@@ -14,7 +14,7 @@ import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import KeyState from "./camelot-states";
 import KeyMap from "./camelot-data";
-import CamelotDescription from "./CamelotDescription";
+// import CamelotDescription from "./CamelotDescription";
 
 const styles = (theme) => ({
   root : {
@@ -74,7 +74,7 @@ class CamelotWheel extends React.Component {
     this.setState({
       [key] : value,
     }, () => {
-      console.log(this.state.currentKey);
+      // console.log(this.state.currentKey);
       this.displayKeys(this.state.currentKey);
     });
   };
@@ -86,7 +86,7 @@ class CamelotWheel extends React.Component {
         keyId.replace("__", ""), /* hack until data is fixed */
         ...KeyMap[keyId][this.state.mode]
       ];
-      console.log(keys);
+      // console.log(keys);
       keys.forEach((m) => {
         newKeys[`__${m}`] = true;
       });
@@ -121,7 +121,7 @@ class CamelotWheel extends React.Component {
         mode={mode}
         xs={12}
         container>
-        <Grid xs={7} item>
+        <Grid xs={12} item>
           <Grid container justify="center" spacing={Number(spacing)}>
             <Grid xs={12} item>
               <Paper className={classes.control}>
@@ -1082,14 +1082,14 @@ class CamelotWheel extends React.Component {
             </Paper>
           </Grid>
         </Grid>
-        <Grid
-          xs={5}
-          spacing={16}
-          item>
-          {/*<Paper className={classes.control}>*/}
-            <CamelotDescription/>
-          {/*</Paper>*/}
-        </Grid>
+        {/*<Grid*/}
+        {/*  xs={5}*/}
+        {/*  spacing={16}*/}
+        {/*  item>*/}
+        {/*  /!*<Paper className={classes.control}>*!/*/}
+        {/*    <CamelotDescription/>*/}
+        {/*  /!*</Paper>*!/*/}
+        {/*</Grid>*/}
       </Grid>
     );
   }
