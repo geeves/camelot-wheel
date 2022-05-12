@@ -3,6 +3,7 @@
 
 ### Generated Files
 # dist/
+.yarn/
 
 ### Node template
 # Logs

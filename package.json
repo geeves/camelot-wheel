@@ -1,129 +1,119 @@
 {
-  "name": "camelot-wheel",
-  "version": "1.0.0",
-  "description": "Interactive Camelot Wheel for harmonic mixing",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "./node_modules/.bin/eslint ./src",
-    "dev": "./node_modules/.bin/webpack --mode development",
-    "dev:watch": "./node_modules/.bin/webpack --watch --mode development",
-    "prod": "./node_modules/.bin/webpack --mode production"
-  },
-  "keywords": [
-    "camelot wheel",
-    "harmonic mixing",
-    "key mixing",
-    "dj",
-    "production",
-    "music"
-  ],
-  "author": "geeves",
-  "license": "MIT",
-  "dependencies": {
-    "@material-ui/core": "^3.9.3",
-    "@material-ui/icons": "^3.0.2",
-    "classnames": "^2.2.6",
-    "core-js": "3.17.2",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-inlinesvg": "0.8.4",
-    "react-svg-map": "^2.0.0",
-    "react-swipeable-views": "^0.13.1"
-  },
-  "devDependencies": {
-    "@babel/cli": "7.4.3",
-    "@babel/core": "7.4.3",
-    "@babel/plugin-proposal-class-properties": "7.4.0",
-    "@babel/plugin-proposal-export-default-from": "7.2.0",
-    "@babel/plugin-transform-regenerator": "7.4.3",
-    "@babel/preset-env": "7.4.3",
-    "@babel/preset-react": "7.0.0",
-    "@svgr/cli": "^4.2.0",
-    "@svgr/core": "^4.2.0",
-    "@svgr/webpack": "^4.2.0",
-    "babel-core": "7.0.0-bridge.0",
-    "babel-eslint": "^10.0.1",
-    "babel-jest": "24.7.1",
-    "babel-loader": "8.0.5",
-    "babel-plugin-inline-react-svg": "^1.1.0",
-    "babel-plugin-module-resolver": "3.2.0",
-    "clean-webpack-plugin": "1.0.1",
-    "css-loader": "^2.1.1",
-    "enzyme": "3.9.0",
-    "enzyme-adapter-react-16": "1.12.1",
-    "eslint": "5.16.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-config-prettier": "3.1.0",
-    "eslint-plugin-import": "2.9.0",
-    "eslint-plugin-prettier": "2.6.2",
-    "eslint-plugin-react": "7.12.4",
-    "eslint-scope": "4.0.3",
-    "file-loader": "2.0.0",
-    "jest": "24.7.1",
-    "jest-dom": "3.1.3",
-    "less": "^3.9.0",
-    "less-loader": "4.1.0",
-    "lint-staged": "7.3.0",
-    "popper.js": "1.15.0",
-    "prettier": "1.17.0",
-    "prop-types": "^15.7.2",
-    "react-native-svg": "^9.4.0",
-    "react-test-renderer": "16.6.0",
-    "react-testing-library": "5.4.4",
-    "requirejs": "2.3.5",
-    "sass-loader": "7.1.0",
-    "scss-loader": "0.0.1",
-    "style-loader": "^0.23.1",
-    "svg-inline-loader": "^0.8.0",
-    "uglify-es": "3.3.9",
-    "uglifyjs-webpack-plugin": "2.0.1",
-    "webpack": "4.30.0",
-    "webpack-cli": "3.3.1"
-  },
-  "babel": {
-    "plugins": [
-      "@babel/plugin-transform-regenerator",
-      "@babel/plugin-proposal-class-properties",
-      "@babel/plugin-proposal-export-default-from",
-      [
-        "module-resolver",
-        {
-          "root": [
-            "./src"
-          ],
-          "alias": {
-            "Components": "./src/components"
-          }
-        }
-      ],
-      [
-        "inline-react-svg",
-        {
-          "svgo": {
-            "plugins": [
-              {
-                "removeAttrs": {
-                  "attrs": "(data-name)"
-                }
-              },
-              {
-                "cleanupIDs": false
-              }
-            ]
-          }
-        }
-      ]
-    ],
-    "presets": [
-      "@babel/preset-react",
-      [
-        "@babel/preset-env",
-        {}
-      ]
-    ],
-    "ignore": [
-      "node_modules/**/*"
-    ]
-  }
+	"name": "camelot-wheel",
+	"version": "1.3.0",
+	"description": "Interactive Camelot Wheel for harmonic mixing",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"lint": "./node_modules/.bin/eslint ./src",
+		"dev": "./node_modules/.bin/webpack --mode development",
+		"dev:watch": "./node_modules/.bin/webpack --watch --mode development",
+		"prod": "./node_modules/.bin/webpack --mode production"
+	},
+	"keywords": [
+		"camelot wheel",
+		"harmonic mixing",
+		"key mixing",
+		"dj",
+		"production",
+		"music"
+	],
+	"author": "geeves",
+	"license": "MIT",
+	"dependencies": {
+		"@material-ui/core": "^4.12.4",
+		"@material-ui/icons": "^4.11.3",
+		"classnames": "^2.3.1",
+		"core-js": "3.22.5",
+		"react": "17.0.2",
+		"react-dom": "17.0.2",
+		"react-inlinesvg": "0.8.4",
+		"react-svg-map": "^2.2.0",
+		"react-swipeable-views": "^0.14.0"
+	},
+	"devDependencies": {
+		"@babel/cli": "7.17.10",
+		"@babel/core": "7.17.10",
+		"@babel/plugin-proposal-class-properties": "7.16.7",
+		"@babel/plugin-proposal-export-default-from": "7.16.7",
+		"@babel/plugin-transform-regenerator": "7.17.9",
+		"@babel/preset-env": "7.17.10",
+		"@babel/preset-react": "7.16.7",
+		"@svgr/cli": "^6.2.1",
+		"@svgr/core": "^6.2.1",
+		"@svgr/webpack": "^6.2.1",
+		"babel-core": "7.0.0-beta.3",
+		"babel-eslint": "^10.1.0",
+		"babel-jest": "28.1.0",
+		"babel-loader": "8.2.5",
+		"babel-plugin-inline-react-svg": "^2.0.1",
+		"babel-plugin-module-resolver": "4.1.0",
+		"clean-webpack-plugin": "4.0.0",
+		"css-loader": "^6.7.1",
+		"enzyme": "3.11.0",
+		"file-loader": "6.2.0",
+		"jest": "28.1.0",
+		"jest-dom": "4.0.0",
+		"less": "^4.1.2",
+		"less-loader": "10.2.0",
+		"lint-staged": "12.4.1",
+		"popper.js": "1.16.1",
+		"prettier": "2.6.2",
+		"prop-types": "^15.8.1",
+		"react-native-svg": "^12.3.0",
+		"react-test-renderer": "18.1.0",
+		"react-testing-library": "8.0.1",
+		"requirejs": "2.3.6",
+		"sass-loader": "12.6.0",
+		"scss-loader": "0.0.1",
+		"style-loader": "^3.3.1",
+		"svg-inline-loader": "^0.8.0",
+		"webpack": "5.72.1",
+		"webpack-cli": "4.9.2"
+	},
+	"babel": {
+		"plugins": [
+			"@babel/plugin-transform-regenerator",
+			"@babel/plugin-proposal-class-properties",
+			"@babel/plugin-proposal-export-default-from",
+			[
+				"module-resolver",
+				{
+					"root": [
+						"./src"
+					],
+					"alias": {
+						"Components": "./src/components"
+					}
+				}
+			],
+			[
+				"inline-react-svg",
+				{
+					"svgo": {
+						"plugins": [
+							{
+								"removeAttrs": {
+									"attrs": "(data-name)"
+								}
+							},
+							{
+								"cleanupIDs": false
+							}
+						]
+					}
+				}
+			]
+		],
+		"presets": [
+			"@babel/preset-react",
+			[
+				"@babel/preset-env",
+				{}
+			]
+		],
+		"ignore": [
+			"node_modules/**/*"
+		]
+	}
 }
