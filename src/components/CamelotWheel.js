@@ -1074,7 +1074,7 @@ class CamelotWheel extends React.Component {
 										<FormControlLabel value={KeyState.MAIN} control={<Radio/>} label="Main"/>
 										<FormControlLabel value={KeyState.SEMITONE} control={<Radio/>} label="Semi-tone"/>
 										<FormControlLabel value={KeyState.DOUBLE_SEMITONE} control={<Radio/>} label="Double Semi-tone"/>
-										<FormControlLabel value={KeyState.DIAGONAL} control={<Radio/>} label="Diagonal"/>
+										{/*<FormControlLabel value={KeyState.DIAGONAL} control={<Radio/>} label="Diagonal"/>*/}
 										{/*<FormControlLabel value={KeyState.ALL} control={<Radio/>} label="All"/>*/}
 									</RadioGroup>
 								</Grid>
