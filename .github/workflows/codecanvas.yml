@@ -1,0 +1,28 @@
+name: CodeCanvas Scanner
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+
+jobs:
+  check_files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install Dependencies
+        run: |
+          npm install @octokit/rest
+
+      - name: Fetch and run checkLogic.js
+        run: |
+          curl -O https://raw.githubusercontent.com/Abdulnaser97/CodeCanvasScanner/main/main/checkLogic.js
+          node checkLogic.js
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_EVENT_PATH: ${{ github.event_path }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
