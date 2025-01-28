@@ -1,7 +1,7 @@
 {
 	"name": "camelot-wheel",
 	"version": "1.4.0",
-	"description": "Interactive Camelot Wheel for harmonic mixing",
+	"description": "Interactive Camelot Wheel for Attempted Harmonic Mixing",
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
@@ -16,7 +16,9 @@
 		"key mixing",
 		"dj",
 		"production",
-		"music"
+		"music",
+		"these are more like guidelines",
+		"you should trust your ears"
 	],
 	"author": "geeves",
 	"license": "MIT",
@@ -39,6 +41,9 @@
 		"@babel/plugin-transform-regenerator": "7.25.9",
 		"@babel/preset-env": "7.26.7",
 		"@babel/preset-react": "7.26.3",
+		"@commitlint/cli": "19.6.1",
+		"@commitlint/config-conventional": "19.6.0",
+		"@commitlint/types": "19.5.0",
 		"@svgr/cli": "7.0.0",
 		"@svgr/core": "7.0.0",
 		"@svgr/webpack": "7.0.0",
