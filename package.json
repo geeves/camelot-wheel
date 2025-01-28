@@ -1,6 +1,6 @@
 {
 	"name": "camelot-wheel",
-	"version": "1.4.0",
+	"version": "1.5.0",
 	"description": "Interactive Camelot Wheel for Attempted Harmonic Mixing",
 	"main": "index.js",
 	"scripts": {
