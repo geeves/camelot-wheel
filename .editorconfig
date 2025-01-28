@@ -9,3 +9,11 @@ indent_style = tab
 charset = utf-8
 indent_size = 2
 tab_width = 2
+max_line_length = 120
+
+[{*.md,*.markdown}]
+indent_size = 4
+indent_style = space
+
+[*.editorconfig]
+indent_style = space
