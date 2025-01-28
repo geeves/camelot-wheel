@@ -4,7 +4,7 @@ div#camelot-container {
 }
 
 article {
-	font-family: Roboto, EuphemiaUCAS, Euphemia UCAS;
+	font-family: Roboto, EuphemiaUCAS, Euphemia UCAS, Arial, sans-serif;
 }
 
 .cls-1 {
@@ -132,11 +132,11 @@ article {
 }
 
 .cls-24, .cls-27 {
-	font-family: EuphemiaUCAS, Euphemia UCAS;
+	font-family: EuphemiaUCAS, Euphemia UCAS, Arial, sans-serif;;
 }
 
 .cls-25, .cls-26 {
-	font-family: STIXGeneral-Regular, STIXGeneral;
+	font-family: STIXGeneral-Regular, STIXGeneral, Arial, sans-serif;;
 }
 
 .cls-26 {
@@ -149,7 +149,7 @@ article {
 
 .cls-28, .cls-29, .cls-30 {
 	font-size: 48px;
-	font-family: EuphemiaUCAS-Bold, Euphemia UCAS;
+	font-family: EuphemiaUCAS-Bold, Euphemia UCAS, Arial, sans-serif;
 	font-weight: 700;
 }
 

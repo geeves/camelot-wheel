@@ -76,7 +76,7 @@ class CamelotDescription extends React.Component {
 						</p>
 						<p>
 							Sometimes it may be best to trust your ears if a mix is working or not rather than a computer algorithm
-							tell you that two tracks are compatible. Most vinyl didn"t contain key information and either you had to
+							tell you that two tracks are compatible. Most vinyl didn't contain key information and either you had to
 							do the legwork yourself to identify the key or become intimately familiar with your records and trust your
 							ears.
 						</p>

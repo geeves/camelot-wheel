@@ -13,7 +13,7 @@ import Radio from '@material-ui/core/Radio';
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 import KeyState from "./camelot-states";
-import KeyMap from "./camelot-data";
+import KeyMap, {createUnderScoreKeys} from "./camelot-data";
 // import CamelotDescription from "./CamelotDescription";
 
 const styles = (theme) => ({
@@ -41,32 +41,7 @@ class CamelotWheel extends React.Component {
 			classes: props.classes,
 			currentKey: "",
 			mode: props.mode,
-			keys: {
-				__1A: false,
-				__1B: false,
-				__2A: false,
-				__2B: false,
-				__3A: false,
-				__3B: false,
-				__4A: false,
-				__4B: false,
-				__5A: false,
-				__5B: false,
-				__6A: false,
-				__6B: false,
-				__7A: false,
-				__7B: false,
-				__8A: false,
-				__8B: false,
-				__9A: false,
-				__9B: false,
-				__10A: false,
-				__10B: false,
-				__11A: false,
-				__11B: false,
-				__12A: false,
-				__12B: false
-			}
+			keys: createUnderScoreKeys()
 		};
 	}
 
@@ -116,13 +91,13 @@ class CamelotWheel extends React.Component {
 
 		return (
 			<Grid
-				justify="center"
+				justifyContent="center"
 				spacing={16}
 				mode={mode}
 				xs={12}
 				container>
 				<Grid xs={12} item>
-					<Grid container justify="center" spacing={Number(spacing)}>
+					<Grid container justifyContent="center" spacing={Number(spacing)}>
 						<Grid xs={12} item>
 							<Paper className={classes.control}>
 								<svg
