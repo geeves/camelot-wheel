@@ -1,18 +1,45 @@
+function createDefaultArrayKeys() {
+	const min = 1;
+	const max = 12;
+	let keys = [];
+	for (let i = min; i <= max; i++) {
+		keys.push(`${i}A`);
+		keys.push(`${i}B`);
+	}
+	return keys;
+}
+
+function createUnderScoreKeys() {
+	let map = {};
+	createDefaultArrayKeys().forEach((v) => {
+		map[`__${v}`] = false;
+	});
+	return map;
+}
+
+function createArrayKeys(min, max) {
+	let keys = [];
+	for (let i = min; i <= max; i++) {
+		keys.push(`${i}A`);
+		keys.push(`${i}B`);
+	}
+	return keys;
+}
+
+function getMain(index) {
+	let min = index -1;
+	let max = index + 1;
+	max = (max > 12) ? (max - 12) : max;
+	let keys = [];
+
+	for (let i = min; i <= max; i++){
+		const altMax = (max > 12) ? (max - 12) : max;
+		const altMin = (max < 1) ? (min + 12) : min;
+	}
+}
+
 export default {
-	keys: [
-		"1A", "1B",
-		"2A", "2B",
-		"3A", "3B",
-		"4A", "4B",
-		"5A", "5B",
-		"6A", "6B",
-		"7A", "7B",
-		"8A", "8B",
-		"9A", "9B",
-		"10A", "10B",
-		"11A", "11B",
-		"12A", "12B"
-	],
+	keys: createDefaultArrayKeys(),
 	__1A: {
 		key: "A-flat Minor",
 		type: "minor",
@@ -829,3 +856,5 @@ export default {
 		]
 	}
 };
+
+export {createUnderScoreKeys, createDefaultArrayKeys}

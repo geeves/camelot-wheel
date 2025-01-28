@@ -4,6 +4,8 @@ A quick interactive Camelot Wheel for DJs into key matching through keys and key
 
 https://www.soulglo.com/camelot-wheel
 
+Note: `npm install` hit snags with dependencies that has not been looked into further. For now, Yarn is the way.
+
 ### Build Development
 
     $ yarn dev
